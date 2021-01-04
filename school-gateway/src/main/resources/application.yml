@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: school-gateway
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 47.97.100.200:8848
+        namespace: dccb330d-e91d-48f6-9238-613bb51535d6
+server:
+  port: 6216
+  servlet:
+    context-path: /

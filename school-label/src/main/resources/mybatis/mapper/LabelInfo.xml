@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.zyforget.school.label.mapper.LabelInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.zyforget.school.label.entity.LabelInfo">
+        <id column="ID" property="id" />
+        <result column="NAME" property="name" />
+        <result column="TYPE" property="type" />
+        <result column="DELETED" property="deleted" />
+        <result column="WHO_CREATE" property="whoCreate" />
+        <result column="WHEN_CREATE" property="whenCreate" />
+        <result column="WHO_MODIFIED" property="whoModified" />
+        <result column="WHEN_MODIFIED" property="whenModified" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, NAME, TYPE, DELETED, WHO_CREATE, WHEN_CREATE, WHO_MODIFIED, WHEN_MODIFIED
+    </sql>
+
+    <select id="getOne" parameterType="java.lang.Long" resultType="cn.zyforget.school.label.entity.LabelInfo">
+        select * from LABEL_INFO WHERE id = ${id}
+    </select>
+
+</mapper>

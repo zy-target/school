@@ -1,0 +1,14 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        namespace: dccb330d-e91d-48f6-9238-613bb51535d6
+        server-addr: 47.97.100.200:8848
+      config:
+        prefix: school
+        namespace: dccb330d-e91d-48f6-9238-613bb51535d6
+        server-addr: 47.97.100.200:8848
+        file-extension: yaml
+  profiles:
+  # 读取配置文件
+    active: es,ds
