@@ -14,16 +14,4 @@
         <artifactId>school</artifactId>
         <version>1.0</version>
     </parent>
-    <dependencies>
-        <dependency>
-            <groupId>cn.zyforget</groupId>
-            <artifactId>school</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.jcraft</groupId>
-            <artifactId>jsch</artifactId>
-            <version>0.1.54</version>
-        </dependency>
-    </dependencies>
 </project>
