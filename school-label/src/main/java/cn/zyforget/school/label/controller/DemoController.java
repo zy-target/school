@@ -19,7 +19,7 @@ public class DemoController {
     @PostMapping("/demo")
     @ApiOperation(value="测试接口", notes="demo")
     public String demo(){
-        System.out.println("test");
+        log.info("demo");
         return "返回数据：" + env.getProperty("school.es");
     }
 }
